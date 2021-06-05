@@ -20,13 +20,18 @@ public class HomeController {
     @GetMapping("/")
     public String greeting(@RequestParam(name = "name", required = false, defaultValue = "World") String name, Model model) {
         model.addAttribute("name", name);
-        return "hello";
+        return "hello.html";
     }
 
     @GetMapping("/registration")
+
     public String registration() {
         return"registration";
     }
+//    @GetMapping("/user")
+//    public String user(){
+//        return "user";
+//    }
     @PostMapping("/registration")
     public String addUser(User user, Map<String, Object> model){
          User userFromDB = userRepository.findByUsername(user.getUsername());
@@ -34,7 +39,7 @@ public class HomeController {
         System.out.println("Privet1");
          if (userFromDB != null){
             System.out.println("Privet2");
-            model.put("hey", "User exists!");
+            model.put("message", "Пользователь с такими данными уже существует!");
             return "registration";
         }
         System.out.println("Privet3");
@@ -42,7 +47,7 @@ public class HomeController {
         user.setRoles(Collections.singleton(Role.USER));
         userRepository.save(user);
 
-        return "redirect:/";
+        return "redirect:/login";
     }
 //
 //    @GetMapping("/login")

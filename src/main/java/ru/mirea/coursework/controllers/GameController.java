@@ -6,10 +6,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import ru.mirea.coursework.model.entity.Game;
+import ru.mirea.coursework.model.repository.GameRepository;
+import ru.mirea.coursework.model.repository.UserRepository;
 import ru.mirea.coursework.model.service.GameService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/games")
@@ -17,17 +20,36 @@ public class GameController {
     //List<Level> levels;
     //внедряем зависимость от LevelService
     public final GameService gameService;
+    @Autowired
+    private GameRepository gameRepository;
 
     @Autowired
     public GameController(GameService gameService) {
         this.gameService = gameService;
     }
 
-    //create
+//    @GetMapping("/user")
+//    public String user(Map<String, Object> model){
+//    final List<Game> games = gameService.readAll();
+//    if (games != null && !games.isEmpty())
+//        model.put("message",new ResponseEntity<>(games, HttpStatus.OK));
+//    else
+//        model.put("message", new ResponseEntity<>(HttpStatus.NOT_FOUND));
+//    return "user";
+//    }
+
+
+//    @PostMapping
+//    public ResponseEntity<?> create(@RequestBody Game game) {
+//        gameService.create(game);
+//        return new ResponseEntity<>(HttpStatus.CREATED);
+//    }
     @PostMapping
-    public ResponseEntity<?> create(@RequestBody Game game) {
-        gameService.create(game);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+    public void create(@RequestParam String name, @RequestParam String creationDate, Map<String, Object> model){
+        Game game = new Game(name, creationDate);
+        gameRepository.save(game);
+        //Iterable<Game> games = gameRepository.findAll();
+        //model.put("messages", games);
     }
 
     @GetMapping("/hi")

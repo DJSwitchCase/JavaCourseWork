@@ -6,16 +6,19 @@
 </head>
 <body>
 <div th:if="${param.error}">
-    Invalid username and password.
+    Указаны неверные данные.
 </div>
 <div th:if="${param.logout}">
     You have been logged out.
 </div>
-Registration
+Регистрация
+<div th:text="${message}"></div>
 <form th:action="@{registration}" method="post">
-    <div><label> User Name : <input type="text" name="username"/> </label></div>
-    <div><label> Password: <input type="password" name="password"/> </label></div>
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+    <div><label> Логин : <input type="text" name="username"/> </label></div>
+    <div><label> Пароль: <input type="password" name="password"/> </label></div>
     <div><input type="submit" value="Sign In"/></div>
+<a href = "/">Вернуться на главную страницу</a>
 </form>
 </body>
 </html>

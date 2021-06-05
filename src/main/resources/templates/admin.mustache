@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <meta charset="UTF-8">
+    <title>Страница пользователя</title>
+</head>
+<body>
+<div>
+<form method="post">
+    <input type="text" name="name" placeholder="Введите название игры" />
+    <input type="number" name="creationDate" placeholder="Введите дату создания игры">
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+    <button type="submit">Добавить в БЛ</button>
+</form>
+</div>
+<form action="/logout" method="post">
+    <input type="submit" value="Sign out">
+</form>
+    <div>Список игр</div>
+    {{#messages}}
+        <div>
+        <b>{{id}}</b>
+        <span>{{name}}</span>
+        <i>{{creationDate}}</i>
+        </div>
+    {{/messages}}
+</body>
+</html>

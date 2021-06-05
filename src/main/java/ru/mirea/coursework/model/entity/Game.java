@@ -30,11 +30,11 @@ public class Game {
         this.creationDate = creationDate;
     }
 
-    public Game(Integer id, String name, String creationDate) {
-        this.id = id;
-        this.name = name;
-        this.creationDate = creationDate;
-    }
+//    public Game(Integer id, String name, String creationDate) {
+//        this.id = id;
+//        this.name = name;
+//        this.creationDate = creationDate;
+//    }
 
     public Game() {
 
