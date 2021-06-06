@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+{{#game}}
+    <form action="/admin/games/{{id}}" method="post">
+
+        <div>
+            Редактирование имени
+            <input type="text" name="name" value="{{name}}">
+            <input type="text" name="creationDate" value="{{creationDate}}">
+        </div>
+        <input type="hidden" value="{{id}}" name="gameId">
+{{/game}}
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+    <button type="submit">Сохранить изменения</button>
+</form>
+</body>
+</html>

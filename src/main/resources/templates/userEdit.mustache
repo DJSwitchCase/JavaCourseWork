@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+{{#user}}
+<form action="/admin/{{id}}" method="post">
+
+        <div>
+            Редактирование имени
+    <input type="text" name="username" value="{{username}}">
+        </div>
+<!--    {{#roles}}-->
+<!--        Редактирование роли-->
+<!--    <div>-->
+<!--        <label><input type="checkbox" name="{{roles}}">{{roles}}</label>-->
+<!--    </div>-->
+<!--    {{/roles}}-->
+    <input type="hidden" value="{{id}}" name="userId">
+    {{/user}}
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+    <button type="submit">Сохранить изменения</button>
+</form>
+</body>
+</html>
