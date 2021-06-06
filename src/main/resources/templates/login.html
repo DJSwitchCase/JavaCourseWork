@@ -8,9 +8,9 @@
 <div th:if="${param.error}">
     Указаны неверные данные.
 </div>
-<div th:if="${param.logout}">
-    You have been logged out.
-</div>
+<!--<div th:if="${param.logout}">-->
+<!--    Вы уже вышли. Войдите еще раз-->
+<!--</div>-->
 Страница авторизации
 <form th:action="@{/login}" method="post">
     <div><label> Имя : <input type="text" name="username"/> </label></div>

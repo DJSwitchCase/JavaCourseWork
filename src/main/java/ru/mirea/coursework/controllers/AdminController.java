@@ -80,7 +80,7 @@ public class AdminController {
 //                user.getRoles().add(Role.valueOf(key));
 //            }
         gameRepository.save(game);
-        return "redirect:/admin/games/{game}";
+        return "redirect:/admin";
         }
 
     @PostMapping("{user}")
@@ -102,7 +102,7 @@ public class AdminController {
         }
 
         userRepository.save(user);
-        return "redirect:/admin/{user}";
+        return "redirect:/admin";
     }
 
     @PostMapping("/filter")

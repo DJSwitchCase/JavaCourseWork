@@ -14,16 +14,12 @@
 </form>
 </div>
 <div>
-<form action="/logout" method="post">
-    <input type="submit" value="Sign out"/>
-    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
-</form>
 </div>
-Фильтр:
-<form method="post" action="/admin/filter">
-   <input type="text" name="filter">
-    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
-</form>
+<!--Фильтр:-->
+<!--<form method="post" action="/admin/filter">-->
+<!--   <input type="text" name="filter">-->
+<!--    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />-->
+<!--</form>-->
     Список игр:
     <table>
         <thead>
@@ -55,11 +51,21 @@
             <td>{{username}}</td>
             <td>{{roles}}</td>
             <td>{{active}}</td>
-            </td>
             <td><a href="/admin/{{id}}">Редактировать</a></td>
+            <td>
+                <form>
+                    <button type="submit">Удалить</button>
+                <input name="_method" type="hidden" value="DELETE" />
+                    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+                </form>
+            </td>
         </tr>
     {{/users}}
     </tbody>
 </table>
+<form action="/logout" method="post">
+    <input type="submit" value="Выйти"/>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+</form>
 </body>
 </html>
