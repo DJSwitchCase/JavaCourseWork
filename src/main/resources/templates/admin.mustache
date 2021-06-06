@@ -10,11 +10,18 @@
     <input type="text" name="name" placeholder="Введите название игры" />
     <input type="number" name="creationDate" placeholder="Введите дату создания игры">
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
-    <button type="submit">Добавить в БЛ</button>
+    <button type="submit">Добавить в БД</button>
 </form>
 </div>
+<div>
 <form action="/logout" method="post">
-    <input type="submit" value="Sign out">
+    <input type="submit" value="Sign out"/>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+</form>
+</div>
+<form method="post" action="/admin/filter">
+   <input type="text" name="filter">
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
 </form>
     <div>Список игр</div>
     {{#messages}}
@@ -24,5 +31,25 @@
         <i>{{creationDate}}</i>
         </div>
     {{/messages}}
+
+Список пользователей:
+<table>
+    <thead>
+    <th>Name</th>
+    <th>Role</th>
+    <th>Active</th>
+    </thead>
+    <tbody>
+    {{#users}}
+        <tr>
+            <td>{{username}}</td>
+            <td>{{roles}}</td>
+            <td>{{active}}</td>
+            </td>
+            <td><a href={{id}}>edit</a></td>
+        </tr>
+    {{/users}}
+    </tbody>
+</table>
 </body>
 </html>

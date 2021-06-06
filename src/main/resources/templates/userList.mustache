@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+UserList:
+<table>
+    <thead>
+    <th>Name</th>
+    <th>Role</th>
+    <th>Active</th>
+    </thead>
+    <tbody>
+    {{#users}}
+    <tr>
+        <td>{{username}}</td>
+        <td>{{roles}}</td>
+        <td>{{active}}</td>
+    </td>
+    <td><a href={{id}}>edit</a></td>
+    </tr>
+    {{/users}}
+    </tbody>
+</table>
+</body>
+</html>

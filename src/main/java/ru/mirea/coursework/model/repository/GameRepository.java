@@ -9,5 +9,6 @@ import java.util.List;
 public interface GameRepository extends JpaRepository<Game, Integer> {
     //@Query("SELECT c.. from Game c")
     //List<Game> findAllById(Integer id);
+    List<Game> findByCreationDate(String creationDate);
 
 }
