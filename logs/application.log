@@ -8,228 +8,379 @@ OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were depre
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.5.0)
 
-2021-06-06 17:58:21.759  INFO 22224 --- [  restartedMain] ru.mirea.coursework.JavaCourseWorkApp    : Starting JavaCourseWorkApp using Java 15.0.1 on DESKTOP-31L6BV3 with PID 22224 (C:\Software\Github\JavaCourseWork\target\classes started by light in C:\Software\Github\JavaCourseWork)
-2021-06-06 17:58:21.761  INFO 22224 --- [  restartedMain] ru.mirea.coursework.JavaCourseWorkApp    : No active profile set, falling back to default profiles: default
-2021-06-06 17:58:21.804  INFO 22224 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-06 17:58:21.804  INFO 22224 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-06 17:58:21.835  WARN 22224 --- [kground-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2021-06-06 17:58:22.401  INFO 22224 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-06-06 17:58:22.453  INFO 22224 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
-2021-06-06 17:58:23.036  INFO 22224 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-06-06 17:58:23.043  INFO 22224 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-06-06 17:58:23.044  INFO 22224 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
-2021-06-06 17:58:23.119  INFO 22224 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-06-06 17:58:23.119  INFO 22224 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1314 ms
-2021-06-06 17:58:23.269  INFO 22224 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-06-06 17:58:23.297  INFO 22224 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
-2021-06-06 17:58:23.374  INFO 22224 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-06-06 17:58:23.431  INFO 22224 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-06-06 17:58:23.616  INFO 22224 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-06-06 17:58:23.626  INFO 22224 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2021-06-06 17:58:24.159  INFO 22224 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-06-06 17:58:24.166  INFO 22224 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-06-06 17:58:24.224  WARN 22224 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-06-06 17:58:24.743  INFO 22224 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c2b7c05, org.springframework.security.web.context.SecurityContextPersistenceFilter@788cc4ff, org.springframework.security.web.header.HeaderWriterFilter@780fbf52, org.springframework.security.web.csrf.CsrfFilter@7ac2056f, org.springframework.security.web.authentication.logout.LogoutFilter@3a017fb8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d20355e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e1c9c2c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@531ac19a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54606cc9, org.springframework.security.web.session.SessionManagementFilter@79c73a50, org.springframework.security.web.access.ExceptionTranslationFilter@1f32595e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69d0d62d]
-2021-06-06 17:58:25.142  INFO 22224 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-06-06 17:58:25.177  INFO 22224 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-06-06 17:58:25.189  INFO 22224 --- [  restartedMain] ru.mirea.coursework.JavaCourseWorkApp    : Started JavaCourseWorkApp in 3.75 seconds (JVM running for 4.367)
-2021-06-06 17:58:25.191  INFO 22224 --- [  restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-2021-06-06 17:58:25.193  INFO 22224 --- [  restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2021-06-06 17:58:28.200  INFO 22224 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-06 17:58:28.200  INFO 22224 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-06-06 17:58:28.201  INFO 22224 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-null
-Privet1
-Privet3
-2021-06-06 17:59:00.021  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 17:59:00
-2021-06-06 17:59:00.024  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 17:59:00.024  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 17:59:00.031  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+2021-06-07 02:51:15.462  INFO 25284 --- [  restartedMain] ru.mirea.coursework.JavaCourseWorkApp    : Starting JavaCourseWorkApp using Java 15.0.1 on DESKTOP-31L6BV3 with PID 25284 (C:\Software\Github\JavaCourseWork\target\classes started by light in C:\Software\Github\JavaCourseWork)
+2021-06-07 02:51:15.464  INFO 25284 --- [  restartedMain] ru.mirea.coursework.JavaCourseWorkApp    : No active profile set, falling back to default profiles: default
+2021-06-07 02:51:15.518  INFO 25284 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-07 02:51:15.519  INFO 25284 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-07 02:51:15.552  WARN 25284 --- [kground-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-07 02:51:16.204  INFO 25284 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-07 02:51:16.274  INFO 25284 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2021-06-07 02:51:16.683  INFO 25284 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@398ebd9f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-07 02:51:16.691  INFO 25284 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-07 02:51:17.007  INFO 25284 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-07 02:51:17.016  INFO 25284 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-07 02:51:17.016  INFO 25284 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-07 02:51:17.090  INFO 25284 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-07 02:51:17.090  INFO 25284 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1570 ms
+2021-06-07 02:51:17.259  INFO 25284 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-07 02:51:17.527  INFO 25284 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-07 02:51:17.590  INFO 25284 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-07 02:51:17.654  INFO 25284 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-07 02:51:17.884  INFO 25284 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-07 02:51:18.088  INFO 25284 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-06-07 02:51:18.757  INFO 25284 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-07 02:51:18.765  INFO 25284 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-07 02:51:18.830  WARN 25284 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-07 02:51:19.376  WARN 25284 --- [  restartedMain] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2021-06-07 02:51:19.487  INFO 25284 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/styles/**'] with []
+2021-06-07 02:51:19.540  INFO 25284 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@310b6c3b, org.springframework.security.web.context.SecurityContextPersistenceFilter@35a37643, org.springframework.security.web.header.HeaderWriterFilter@506a9e80, org.springframework.security.web.csrf.CsrfFilter@37d0abe0, org.springframework.security.web.authentication.logout.LogoutFilter@1bd737f2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19f791f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@592e0ea9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@262b9c3e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@113dbcd8, org.springframework.security.web.session.SessionManagementFilter@69e51d7d, org.springframework.security.web.access.ExceptionTranslationFilter@4008dced, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3692c092]
+2021-06-07 02:51:20.037  INFO 25284 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-07 02:51:20.079  INFO 25284 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-07 02:51:20.093  INFO 25284 --- [  restartedMain] ru.mirea.coursework.JavaCourseWorkApp    : Started JavaCourseWorkApp in 5.075 seconds (JVM running for 5.934)
+2021-06-07 02:51:20.095  INFO 25284 --- [  restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-07 02:51:20.097  INFO 25284 --- [  restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-07 02:51:20.251  INFO 25284 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-07 02:51:20.252  INFO 25284 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-07 02:51:20.253  INFO 25284 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-07 02:52:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 02:52:00
+2021-06-07 02:52:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 02:52:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 02:52:00.024  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
 Method: readAll. Time: 7 milliseconds. Return: []
-2021-06-06 17:59:00.040  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 4 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@68936589, ru.mirea.coursework.model.entity.Game@14841a20]
-2021-06-06 17:59:00.043  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 31 milliseconds.
-null
-Privet1
-Privet3
-2021-06-06 18:00:00.009  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:00:00
-2021-06-06 18:00:00.010  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:00:00.011  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:00:00.014  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+2021-06-07 02:52:00.032  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 4 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@196fc36c, ru.mirea.coursework.model.entity.Game@59d53d53, ru.mirea.coursework.model.entity.Game@673cd924, ru.mirea.coursework.model.entity.Game@75c2ea01, ru.mirea.coursework.model.entity.Game@12d13376, ru.mirea.coursework.model.entity.Game@629eabda, ru.mirea.coursework.model.entity.Game@636aab54, ru.mirea.coursework.model.entity.Game@19ad7da, ru.mirea.coursework.model.entity.Game@1a4b1e1c, ru.mirea.coursework.model.entity.Game@d1cb6f4, ru.mirea.coursework.model.entity.Game@3b1a8c08, ru.mirea.coursework.model.entity.Game@6ce9a8b6, ru.mirea.coursework.model.entity.Game@2e90f0c9, ru.mirea.coursework.model.entity.Game@46d348f9]
+2021-06-07 02:52:00.044  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 38 milliseconds.
+2021-06-07 02:53:00.005  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 02:53:00
+2021-06-07 02:53:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 02:53:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 02:53:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 2 milliseconds. Return: []
+2021-06-07 02:53:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2e830822, ru.mirea.coursework.model.entity.Game@649d10c2, ru.mirea.coursework.model.entity.Game@1d6be1a8, ru.mirea.coursework.model.entity.Game@f607ded, ru.mirea.coursework.model.entity.Game@3914a63b, ru.mirea.coursework.model.entity.Game@3583aadb, ru.mirea.coursework.model.entity.Game@77a76b62, ru.mirea.coursework.model.entity.Game@7b24ff6e, ru.mirea.coursework.model.entity.Game@671dab4f, ru.mirea.coursework.model.entity.Game@4fe00005, ru.mirea.coursework.model.entity.Game@3508ee0, ru.mirea.coursework.model.entity.Game@5fd3de6b, ru.mirea.coursework.model.entity.Game@551e410d, ru.mirea.coursework.model.entity.Game@1ab19383]
+2021-06-07 02:53:00.019  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 15 milliseconds.
+2021-06-07 02:54:00.002  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 02:54:00
+2021-06-07 02:54:00.003  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 02:54:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 02:54:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
 Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:00:00.016  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2e76b84b, ru.mirea.coursework.model.entity.Game@33c95e6d]
-2021-06-06 18:00:00.019  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:01:00.004  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:01:00
-2021-06-06 18:01:00.004  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:01:00.005  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:01:00.007  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+2021-06-07 02:54:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@6ac6c2b2, ru.mirea.coursework.model.entity.Game@6161ad8, ru.mirea.coursework.model.entity.Game@4f8bf392, ru.mirea.coursework.model.entity.Game@5ac29c55, ru.mirea.coursework.model.entity.Game@6cd16ed, ru.mirea.coursework.model.entity.Game@30bb1c36, ru.mirea.coursework.model.entity.Game@203c6ed0, ru.mirea.coursework.model.entity.Game@6e526eb6, ru.mirea.coursework.model.entity.Game@c677ef, ru.mirea.coursework.model.entity.Game@6874816d, ru.mirea.coursework.model.entity.Game@2b7d385d, ru.mirea.coursework.model.entity.Game@5627d45a, ru.mirea.coursework.model.entity.Game@656db87e, ru.mirea.coursework.model.entity.Game@295e3257]
+2021-06-07 02:54:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 12 milliseconds.
+2021-06-07 02:55:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 02:55:00
+2021-06-07 02:55:00.005  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 02:55:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 02:55:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
 Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:01:00.009  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@6e7484c5, ru.mirea.coursework.model.entity.Game@2c079ea8]
-2021-06-06 18:01:00.012  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+2021-06-07 02:55:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@738e6ea, ru.mirea.coursework.model.entity.Game@32a2b464, ru.mirea.coursework.model.entity.Game@343d9a29, ru.mirea.coursework.model.entity.Game@3e20e1d6, ru.mirea.coursework.model.entity.Game@7eef4f4e, ru.mirea.coursework.model.entity.Game@59c9d563, ru.mirea.coursework.model.entity.Game@17de0a1, ru.mirea.coursework.model.entity.Game@38ea9f09, ru.mirea.coursework.model.entity.Game@3c7b2265, ru.mirea.coursework.model.entity.Game@2b0e9a44, ru.mirea.coursework.model.entity.Game@45981f6c, ru.mirea.coursework.model.entity.Game@2966d201, ru.mirea.coursework.model.entity.Game@4c6ba542, ru.mirea.coursework.model.entity.Game@1368da31]
+2021-06-07 02:55:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 12 milliseconds.
+2021-06-07 02:56:00.001  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 02:56:00
+2021-06-07 02:56:00.002  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 02:56:00.003  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 02:56:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 2 milliseconds. Return: []
+2021-06-07 02:56:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2989e73e, ru.mirea.coursework.model.entity.Game@3b79664a, ru.mirea.coursework.model.entity.Game@b22d8f, ru.mirea.coursework.model.entity.Game@42d7899f, ru.mirea.coursework.model.entity.Game@240136ec, ru.mirea.coursework.model.entity.Game@543a5f10, ru.mirea.coursework.model.entity.Game@4575ce4d, ru.mirea.coursework.model.entity.Game@3b902c0d, ru.mirea.coursework.model.entity.Game@168bcbc5, ru.mirea.coursework.model.entity.Game@104fc4db, ru.mirea.coursework.model.entity.Game@7ba37739, ru.mirea.coursework.model.entity.Game@41e9cc04, ru.mirea.coursework.model.entity.Game@9f4e21f, ru.mirea.coursework.model.entity.Game@677396e6]
+2021-06-07 02:56:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 12 milliseconds.
+2021-06-07 02:57:00.005  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 02:57:00
+2021-06-07 02:57:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 02:57:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 02:57:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 2 milliseconds. Return: []
+2021-06-07 02:57:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@7d2df1a9, ru.mirea.coursework.model.entity.Game@5e29d0fd, ru.mirea.coursework.model.entity.Game@6092170a, ru.mirea.coursework.model.entity.Game@1aa2f417, ru.mirea.coursework.model.entity.Game@890fe53, ru.mirea.coursework.model.entity.Game@18ae6984, ru.mirea.coursework.model.entity.Game@687417dc, ru.mirea.coursework.model.entity.Game@65fb5489, ru.mirea.coursework.model.entity.Game@6a164c03, ru.mirea.coursework.model.entity.Game@11fea8c, ru.mirea.coursework.model.entity.Game@491dc784, ru.mirea.coursework.model.entity.Game@767d8d32, ru.mirea.coursework.model.entity.Game@2ed3a1aa, ru.mirea.coursework.model.entity.Game@50e67576]
+2021-06-07 02:57:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 11 milliseconds.
+2021-06-07 02:58:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 02:58:00
+2021-06-07 02:58:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 02:58:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 02:58:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 02:58:00.017  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@15d7aae6, ru.mirea.coursework.model.entity.Game@405588f4, ru.mirea.coursework.model.entity.Game@315bae2d, ru.mirea.coursework.model.entity.Game@5bb0d720, ru.mirea.coursework.model.entity.Game@7398d62a, ru.mirea.coursework.model.entity.Game@1f66e285, ru.mirea.coursework.model.entity.Game@73201d82, ru.mirea.coursework.model.entity.Game@2e74dd11, ru.mirea.coursework.model.entity.Game@1be86773, ru.mirea.coursework.model.entity.Game@3332dc41, ru.mirea.coursework.model.entity.Game@400d0ba8, ru.mirea.coursework.model.entity.Game@4899caed, ru.mirea.coursework.model.entity.Game@1012ef72, ru.mirea.coursework.model.entity.Game@35e7e9e5]
+2021-06-07 02:58:00.020  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 11 milliseconds.
+2021-06-07 02:59:00.003  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 02:59:00
+2021-06-07 02:59:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 02:59:00.005  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 02:59:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 02:59:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2169c3f7, ru.mirea.coursework.model.entity.Game@381cabe0, ru.mirea.coursework.model.entity.Game@37457e07, ru.mirea.coursework.model.entity.Game@434d0b08, ru.mirea.coursework.model.entity.Game@2c541eed, ru.mirea.coursework.model.entity.Game@714ae32c, ru.mirea.coursework.model.entity.Game@6de30e44, ru.mirea.coursework.model.entity.Game@465d4dbb, ru.mirea.coursework.model.entity.Game@4af290eb, ru.mirea.coursework.model.entity.Game@6c07491a, ru.mirea.coursework.model.entity.Game@1963ebf0, ru.mirea.coursework.model.entity.Game@35ff4df2, ru.mirea.coursework.model.entity.Game@6b54e66e, ru.mirea.coursework.model.entity.Game@3dcd3d87]
+2021-06-07 02:59:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
 Method: schedule. Time: 9 milliseconds.
-2021-06-06 18:02:00.010  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:02:00
-2021-06-06 18:02:00.012  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:02:00.012  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:02:00.015  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+2021-06-07 03:00:00.005  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:00:00
+2021-06-07 03:00:00.005  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:00:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:00:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
 Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:02:00.017  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@22d7cf56, ru.mirea.coursework.model.entity.Game@56ee31a0]
-2021-06-06 18:02:00.019  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:03:00.006  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:03:00
-2021-06-06 18:03:00.007  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:03:00.008  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:03:00.011  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:03:00.014  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@536ad029, ru.mirea.coursework.model.entity.Game@1dd896dc]
-2021-06-06 18:03:00.016  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:04:00.017  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:04:00
-2021-06-06 18:04:00.018  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:04:00.019  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:04:00.021  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:04:00.024  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@350219ec, ru.mirea.coursework.model.entity.Game@24dde0e0]
-2021-06-06 18:04:00.027  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:05:00.012  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:05:00
-2021-06-06 18:05:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:05:00.014  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:05:00.017  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:05:00.019  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@4e36a9b4, ru.mirea.coursework.model.entity.Game@7c55a2eb]
-2021-06-06 18:05:00.021  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:06:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:06:00
-2021-06-06 18:06:00.015  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:06:00.016  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:06:00.019  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+2021-06-07 03:00:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@7f2f78ab, ru.mirea.coursework.model.entity.Game@245a6a66, ru.mirea.coursework.model.entity.Game@2d745819, ru.mirea.coursework.model.entity.Game@536cbc0, ru.mirea.coursework.model.entity.Game@1d811ed, ru.mirea.coursework.model.entity.Game@762652ea, ru.mirea.coursework.model.entity.Game@799d78a7, ru.mirea.coursework.model.entity.Game@4ac6d49f, ru.mirea.coursework.model.entity.Game@bd0f353, ru.mirea.coursework.model.entity.Game@4f2541c1, ru.mirea.coursework.model.entity.Game@5def50c2, ru.mirea.coursework.model.entity.Game@21f105cc, ru.mirea.coursework.model.entity.Game@2d3730ca, ru.mirea.coursework.model.entity.Game@487957e4]
+2021-06-07 03:00:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 12 milliseconds.
+2021-06-07 03:01:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:01:00
+2021-06-07 03:01:00.017  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:01:00.018  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:01:00.020  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
 Method: readAll. Time: 0 milliseconds. Return: []
-2021-06-06 18:06:00.021  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@6ca4929c, ru.mirea.coursework.model.entity.Game@5a036a8a]
-2021-06-06 18:06:00.023  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:07:00.006  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:07:00
-2021-06-06 18:07:00.007  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:07:00.008  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:07:00.011  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 0 milliseconds. Return: []
-2021-06-06 18:07:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@75576d41, ru.mirea.coursework.model.entity.Game@45edba57]
-2021-06-06 18:07:00.015  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 9 milliseconds.
-2021-06-06 18:08:00.011  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:08:00
-2021-06-06 18:08:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:08:00.014  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:08:00.016  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:08:00.019  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@217082b3, ru.mirea.coursework.model.entity.Game@45de6c10]
-2021-06-06 18:08:00.021  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:09:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:09:00
-2021-06-06 18:09:00.014  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:09:00.015  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:09:00.017  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:09:00.020  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@31b34fce, ru.mirea.coursework.model.entity.Game@21748c4b]
-2021-06-06 18:09:00.022  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 9 milliseconds.
-2021-06-06 18:10:00.002  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:10:00
-2021-06-06 18:10:00.003  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:10:00.004  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:10:00.006  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:10:00.009  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@fc89064, ru.mirea.coursework.model.entity.Game@20cd17af]
-2021-06-06 18:10:00.011  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 9 milliseconds.
-2021-06-06 18:11:00.009  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:11:00
-2021-06-06 18:11:00.010  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:11:00.010  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:11:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:11:00.016  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@3586f0b, ru.mirea.coursework.model.entity.Game@1509f9f]
-2021-06-06 18:11:00.018  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 9 milliseconds.
-2021-06-06 18:12:00.003  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:12:00
-2021-06-06 18:12:00.004  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:12:00.005  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:12:00.008  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:12:00.011  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2365e125, ru.mirea.coursework.model.entity.Game@4e1c6b02]
-2021-06-06 18:12:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:13:00.017  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:13:00
-2021-06-06 18:13:00.018  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:13:00.019  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:13:00.022  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:13:00.024  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2c5fb7bd, ru.mirea.coursework.model.entity.Game@1bdf2220]
-2021-06-06 18:13:00.027  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:14:00.000  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:14:00
-2021-06-06 18:14:00.001  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:14:00.002  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:14:00.005  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 0 milliseconds. Return: []
-2021-06-06 18:14:00.007  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@3079d2a5, ru.mirea.coursework.model.entity.Game@81e2572]
-2021-06-06 18:14:00.009  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 9 milliseconds.
-2021-06-06 18:15:00.004  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:15:00
-2021-06-06 18:15:00.005  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:15:00.005  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:15:00.009  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:15:00.011  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@26646af8, ru.mirea.coursework.model.entity.Game@63d5a653]
-2021-06-06 18:15:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 10 milliseconds.
-2021-06-06 18:16:00.007  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:16:00
-2021-06-06 18:16:00.007  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:16:00.008  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:16:00.010  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:16:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@6b5a70af, ru.mirea.coursework.model.entity.Game@2dc9f580]
-2021-06-06 18:16:00.015  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+2021-06-07 03:01:00.022  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@3eac2563, ru.mirea.coursework.model.entity.Game@6b4decc7, ru.mirea.coursework.model.entity.Game@2b2b9434, ru.mirea.coursework.model.entity.Game@664e126a, ru.mirea.coursework.model.entity.Game@3996a4fd, ru.mirea.coursework.model.entity.Game@3d395cdc, ru.mirea.coursework.model.entity.Game@4a44f57b, ru.mirea.coursework.model.entity.Game@5c8f631b, ru.mirea.coursework.model.entity.Game@50b2953b, ru.mirea.coursework.model.entity.Game@271aec4d, ru.mirea.coursework.model.entity.Game@4a983af8, ru.mirea.coursework.model.entity.Game@6d280f0b, ru.mirea.coursework.model.entity.Game@297744d8, ru.mirea.coursework.model.entity.Game@597fad3f]
+2021-06-07 03:01:00.024  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
 Method: schedule. Time: 8 milliseconds.
-2021-06-06 18:17:00.008  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:17:00
-2021-06-06 18:17:00.008  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:17:00.009  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:17:00.011  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+2021-06-07 03:02:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:02:00
+2021-06-07 03:02:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:02:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:02:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 2 milliseconds. Return: []
+2021-06-07 03:02:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@470d5771, ru.mirea.coursework.model.entity.Game@3b1589f5, ru.mirea.coursework.model.entity.Game@afac64, ru.mirea.coursework.model.entity.Game@3fa8af86, ru.mirea.coursework.model.entity.Game@1233c1dd, ru.mirea.coursework.model.entity.Game@57eb84f, ru.mirea.coursework.model.entity.Game@78cff808, ru.mirea.coursework.model.entity.Game@261bc08, ru.mirea.coursework.model.entity.Game@ed0a8b0, ru.mirea.coursework.model.entity.Game@7e9cc5e5, ru.mirea.coursework.model.entity.Game@79947d86, ru.mirea.coursework.model.entity.Game@761a0f40, ru.mirea.coursework.model.entity.Game@7d84bc1b, ru.mirea.coursework.model.entity.Game@65afeda3]
+2021-06-07 03:02:00.017  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 11 milliseconds.
+2021-06-07 03:03:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:03:00
+2021-06-07 03:03:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:03:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:03:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
 Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:17:00.014  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@350aba35, ru.mirea.coursework.model.entity.Game@35dd445]
-2021-06-06 18:17:00.015  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+2021-06-07 03:03:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@32cb0131, ru.mirea.coursework.model.entity.Game@15c1424d, ru.mirea.coursework.model.entity.Game@33543778, ru.mirea.coursework.model.entity.Game@35e5a7f7, ru.mirea.coursework.model.entity.Game@5fcdeaf3, ru.mirea.coursework.model.entity.Game@4081086d, ru.mirea.coursework.model.entity.Game@52fc18f2, ru.mirea.coursework.model.entity.Game@4a3ec745, ru.mirea.coursework.model.entity.Game@7a143683, ru.mirea.coursework.model.entity.Game@329e9bcc, ru.mirea.coursework.model.entity.Game@972ee5, ru.mirea.coursework.model.entity.Game@3cafc55d, ru.mirea.coursework.model.entity.Game@67d44c65, ru.mirea.coursework.model.entity.Game@2152eba8]
+2021-06-07 03:03:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:04:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:04:00
+2021-06-07 03:04:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:04:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:04:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:04:00.018  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@3a642650, ru.mirea.coursework.model.entity.Game@2d99661d, ru.mirea.coursework.model.entity.Game@7804423b, ru.mirea.coursework.model.entity.Game@94664cf, ru.mirea.coursework.model.entity.Game@120b8511, ru.mirea.coursework.model.entity.Game@7444b0c3, ru.mirea.coursework.model.entity.Game@2e8b31ea, ru.mirea.coursework.model.entity.Game@145158e8, ru.mirea.coursework.model.entity.Game@5abc747e, ru.mirea.coursework.model.entity.Game@b2f0542, ru.mirea.coursework.model.entity.Game@7cdc71ac, ru.mirea.coursework.model.entity.Game@62d4f0c7, ru.mirea.coursework.model.entity.Game@5bf27767, ru.mirea.coursework.model.entity.Game@28047c4e]
+2021-06-07 03:04:00.021  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:05:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:05:00
+2021-06-07 03:05:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:05:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:05:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 0 milliseconds. Return: []
+2021-06-07 03:05:00.017  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@1750a305, ru.mirea.coursework.model.entity.Game@2cd93ba8, ru.mirea.coursework.model.entity.Game@6cdbc612, ru.mirea.coursework.model.entity.Game@64e8a838, ru.mirea.coursework.model.entity.Game@7632672b, ru.mirea.coursework.model.entity.Game@13d3063e, ru.mirea.coursework.model.entity.Game@210ab900, ru.mirea.coursework.model.entity.Game@827c71, ru.mirea.coursework.model.entity.Game@65ec4875, ru.mirea.coursework.model.entity.Game@6e855000, ru.mirea.coursework.model.entity.Game@1a333669, ru.mirea.coursework.model.entity.Game@941b0aa, ru.mirea.coursework.model.entity.Game@ee9ee17, ru.mirea.coursework.model.entity.Game@4a28aa9a]
+2021-06-07 03:05:00.020  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:06:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:06:00
+2021-06-07 03:06:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:06:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:06:00.018  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:06:00.020  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@177e3285, ru.mirea.coursework.model.entity.Game@11b1b01e, ru.mirea.coursework.model.entity.Game@364c91c1, ru.mirea.coursework.model.entity.Game@4239b340, ru.mirea.coursework.model.entity.Game@24354b98, ru.mirea.coursework.model.entity.Game@38982e40, ru.mirea.coursework.model.entity.Game@6a88720b, ru.mirea.coursework.model.entity.Game@65a47fa9, ru.mirea.coursework.model.entity.Game@6bc3910e, ru.mirea.coursework.model.entity.Game@12d05818, ru.mirea.coursework.model.entity.Game@3b617863, ru.mirea.coursework.model.entity.Game@7d7e1191, ru.mirea.coursework.model.entity.Game@a42b4d1, ru.mirea.coursework.model.entity.Game@1a423d19]
+2021-06-07 03:06:00.023  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:06:58.765  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:06:58
+2021-06-07 03:06:58.766  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:06:58.767  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:06:58.771  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 2 milliseconds. Return: []
+2021-06-07 03:06:58.775  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@8ba44b5, ru.mirea.coursework.model.entity.Game@3a01a4bb, ru.mirea.coursework.model.entity.Game@63fe674f, ru.mirea.coursework.model.entity.Game@6c714635, ru.mirea.coursework.model.entity.Game@36b428e2, ru.mirea.coursework.model.entity.Game@1a766f3, ru.mirea.coursework.model.entity.Game@11f3ad97, ru.mirea.coursework.model.entity.Game@77d50172, ru.mirea.coursework.model.entity.Game@6031c452, ru.mirea.coursework.model.entity.Game@5a1ba659, ru.mirea.coursework.model.entity.Game@56083798, ru.mirea.coursework.model.entity.Game@90972ba, ru.mirea.coursework.model.entity.Game@67f4249d, ru.mirea.coursework.model.entity.Game@60da6f54]
+2021-06-07 03:06:58.778  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 14 milliseconds.
+2021-06-07 03:08:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:08:00
+2021-06-07 03:08:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:08:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:08:00.017  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:08:00.019  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@8d3c929, ru.mirea.coursework.model.entity.Game@5bfcb76f, ru.mirea.coursework.model.entity.Game@4997528, ru.mirea.coursework.model.entity.Game@3608bb3e, ru.mirea.coursework.model.entity.Game@2004a657, ru.mirea.coursework.model.entity.Game@1e7d3af7, ru.mirea.coursework.model.entity.Game@51022c25, ru.mirea.coursework.model.entity.Game@22a0ac70, ru.mirea.coursework.model.entity.Game@2713906d, ru.mirea.coursework.model.entity.Game@50cebcfa, ru.mirea.coursework.model.entity.Game@106dd1c2, ru.mirea.coursework.model.entity.Game@37092c93, ru.mirea.coursework.model.entity.Game@c2242e7, ru.mirea.coursework.model.entity.Game@292e16f5]
+2021-06-07 03:08:00.022  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:09:00.002  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:09:00
+2021-06-07 03:09:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:09:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:09:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:09:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@6402794a, ru.mirea.coursework.model.entity.Game@56b3f7da, ru.mirea.coursework.model.entity.Game@36eed0be, ru.mirea.coursework.model.entity.Game@ec628d8, ru.mirea.coursework.model.entity.Game@7979d863, ru.mirea.coursework.model.entity.Game@30bdedb1, ru.mirea.coursework.model.entity.Game@7096a038, ru.mirea.coursework.model.entity.Game@4fa9c61a, ru.mirea.coursework.model.entity.Game@7824a54c, ru.mirea.coursework.model.entity.Game@272b0f9c, ru.mirea.coursework.model.entity.Game@6279fc21, ru.mirea.coursework.model.entity.Game@63616f62, ru.mirea.coursework.model.entity.Game@3eb2a887, ru.mirea.coursework.model.entity.Game@419a0722]
+2021-06-07 03:09:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:10:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:10:00
+2021-06-07 03:10:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:10:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:10:00.019  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:10:00.021  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@69bddbd3, ru.mirea.coursework.model.entity.Game@4147e015, ru.mirea.coursework.model.entity.Game@49912fe0, ru.mirea.coursework.model.entity.Game@725397db, ru.mirea.coursework.model.entity.Game@7537a901, ru.mirea.coursework.model.entity.Game@b8eb8fa, ru.mirea.coursework.model.entity.Game@4ba07844, ru.mirea.coursework.model.entity.Game@2523c3a4, ru.mirea.coursework.model.entity.Game@6d1409a0, ru.mirea.coursework.model.entity.Game@13233590, ru.mirea.coursework.model.entity.Game@5b891de8, ru.mirea.coursework.model.entity.Game@600ccbde, ru.mirea.coursework.model.entity.Game@2d188776, ru.mirea.coursework.model.entity.Game@271da8f0]
+2021-06-07 03:10:00.023  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:11:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:11:00
+2021-06-07 03:11:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:11:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:11:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:11:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@58a00152, ru.mirea.coursework.model.entity.Game@7d78945b, ru.mirea.coursework.model.entity.Game@3df39dc, ru.mirea.coursework.model.entity.Game@578e49ff, ru.mirea.coursework.model.entity.Game@f7c78cd, ru.mirea.coursework.model.entity.Game@361fef35, ru.mirea.coursework.model.entity.Game@4cf431f3, ru.mirea.coursework.model.entity.Game@69104823, ru.mirea.coursework.model.entity.Game@546efdc, ru.mirea.coursework.model.entity.Game@4c69de06, ru.mirea.coursework.model.entity.Game@21ff15d1, ru.mirea.coursework.model.entity.Game@4a45109d, ru.mirea.coursework.model.entity.Game@78cf3e06, ru.mirea.coursework.model.entity.Game@7ad446f7]
+2021-06-07 03:11:00.018  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:12:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:12:00
+2021-06-07 03:12:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:12:00.017  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:12:00.018  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:12:00.021  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2f49981c, ru.mirea.coursework.model.entity.Game@63d99df0, ru.mirea.coursework.model.entity.Game@4bf22b88, ru.mirea.coursework.model.entity.Game@78d851e0, ru.mirea.coursework.model.entity.Game@1bb2bf9f, ru.mirea.coursework.model.entity.Game@34ab9704, ru.mirea.coursework.model.entity.Game@6e5f5472, ru.mirea.coursework.model.entity.Game@54325f08, ru.mirea.coursework.model.entity.Game@5af25c56, ru.mirea.coursework.model.entity.Game@3289e3bb, ru.mirea.coursework.model.entity.Game@26e1cd5c, ru.mirea.coursework.model.entity.Game@60ed1c97, ru.mirea.coursework.model.entity.Game@28b5fc30, ru.mirea.coursework.model.entity.Game@55dc46a6]
+2021-06-07 03:12:00.023  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
 Method: schedule. Time: 8 milliseconds.
-2021-06-06 18:18:00.015  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:18:00
-2021-06-06 18:18:00.016  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:18:00.016  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:18:00.019  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+2021-06-07 03:13:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:13:00
+2021-06-07 03:13:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:13:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:13:00.019  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
 Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:18:00.020  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@6888444e, ru.mirea.coursework.model.entity.Game@465af03]
-2021-06-06 18:18:00.022  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-06 18:19:00.006  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 06-06-2021 18:19:00
-2021-06-06 18:19:00.007  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-06 18:19:00.008  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-06 18:19:00.010  INFO 22224 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+2021-06-07 03:13:00.021  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@59271b74, ru.mirea.coursework.model.entity.Game@3f2d019, ru.mirea.coursework.model.entity.Game@2e0cb218, ru.mirea.coursework.model.entity.Game@77f6d484, ru.mirea.coursework.model.entity.Game@166b9db5, ru.mirea.coursework.model.entity.Game@30cf579, ru.mirea.coursework.model.entity.Game@485b1b72, ru.mirea.coursework.model.entity.Game@9c8a409, ru.mirea.coursework.model.entity.Game@430416b0, ru.mirea.coursework.model.entity.Game@27c78494, ru.mirea.coursework.model.entity.Game@37578b95, ru.mirea.coursework.model.entity.Game@7bf3899a, ru.mirea.coursework.model.entity.Game@1821a1c2, ru.mirea.coursework.model.entity.Game@3d96576]
+2021-06-07 03:13:00.024  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:14:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:14:00
+2021-06-07 03:14:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:14:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:14:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
 Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-06 18:19:00.013  INFO 22224 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@55ac364e, ru.mirea.coursework.model.entity.Game@32241382]
-2021-06-06 18:19:00.015  INFO 22224 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+2021-06-07 03:14:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@311017a4, ru.mirea.coursework.model.entity.Game@ba339a3, ru.mirea.coursework.model.entity.Game@462a0a5b, ru.mirea.coursework.model.entity.Game@6e84e45b, ru.mirea.coursework.model.entity.Game@5f987318, ru.mirea.coursework.model.entity.Game@4d642769, ru.mirea.coursework.model.entity.Game@5b8a844c, ru.mirea.coursework.model.entity.Game@1265055a, ru.mirea.coursework.model.entity.Game@e79a4bd, ru.mirea.coursework.model.entity.Game@624a8574, ru.mirea.coursework.model.entity.Game@6d6dd595, ru.mirea.coursework.model.entity.Game@579842b7, ru.mirea.coursework.model.entity.Game@148748b5, ru.mirea.coursework.model.entity.Game@22501e74]
+2021-06-07 03:14:00.017  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:15:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:15:00
+2021-06-07 03:15:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:15:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:15:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:15:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@43f2883f, ru.mirea.coursework.model.entity.Game@446d3f9d, ru.mirea.coursework.model.entity.Game@727de3d5, ru.mirea.coursework.model.entity.Game@fbe5a1e, ru.mirea.coursework.model.entity.Game@58da98a6, ru.mirea.coursework.model.entity.Game@7566c5f7, ru.mirea.coursework.model.entity.Game@6898f3c5, ru.mirea.coursework.model.entity.Game@150b3a62, ru.mirea.coursework.model.entity.Game@19189fcd, ru.mirea.coursework.model.entity.Game@5a92b864, ru.mirea.coursework.model.entity.Game@753b6e28, ru.mirea.coursework.model.entity.Game@392f82c7, ru.mirea.coursework.model.entity.Game@649494d8, ru.mirea.coursework.model.entity.Game@2b0a51b6]
+2021-06-07 03:15:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:16:00.000  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:16:00
+2021-06-07 03:16:00.001  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:16:00.002  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:16:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 2 milliseconds. Return: []
+2021-06-07 03:16:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@5e5776b5, ru.mirea.coursework.model.entity.Game@529b3630, ru.mirea.coursework.model.entity.Game@4c239ee9, ru.mirea.coursework.model.entity.Game@7e688a1d, ru.mirea.coursework.model.entity.Game@1b6fa9bb, ru.mirea.coursework.model.entity.Game@10ce3650, ru.mirea.coursework.model.entity.Game@404a2676, ru.mirea.coursework.model.entity.Game@7ac86400, ru.mirea.coursework.model.entity.Game@1c8c3893, ru.mirea.coursework.model.entity.Game@7d11f1e4, ru.mirea.coursework.model.entity.Game@6cf901a6, ru.mirea.coursework.model.entity.Game@5528805d, ru.mirea.coursework.model.entity.Game@281d62cb, ru.mirea.coursework.model.entity.Game@5af128fd]
+2021-06-07 03:16:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:17:00.001  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:17:00
+2021-06-07 03:17:00.003  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:17:00.003  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:17:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:17:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@c7cbe85, ru.mirea.coursework.model.entity.Game@4c285f8e, ru.mirea.coursework.model.entity.Game@73aef272, ru.mirea.coursework.model.entity.Game@42eb044, ru.mirea.coursework.model.entity.Game@6dcfaed2, ru.mirea.coursework.model.entity.Game@639558ca, ru.mirea.coursework.model.entity.Game@67ac1ba8, ru.mirea.coursework.model.entity.Game@16713b89, ru.mirea.coursework.model.entity.Game@6d8aeab, ru.mirea.coursework.model.entity.Game@4fc2e5b2, ru.mirea.coursework.model.entity.Game@4834d6b9, ru.mirea.coursework.model.entity.Game@57860145, ru.mirea.coursework.model.entity.Game@146850e8, ru.mirea.coursework.model.entity.Game@4c5fc8a2]
+2021-06-07 03:17:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:18:00.003  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:18:00
+2021-06-07 03:18:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:18:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:18:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:18:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@18345983, ru.mirea.coursework.model.entity.Game@6fce8724, ru.mirea.coursework.model.entity.Game@1ba7f153, ru.mirea.coursework.model.entity.Game@1641e67e, ru.mirea.coursework.model.entity.Game@2c035d74, ru.mirea.coursework.model.entity.Game@37ef1877, ru.mirea.coursework.model.entity.Game@13664ab0, ru.mirea.coursework.model.entity.Game@a0d2cb4, ru.mirea.coursework.model.entity.Game@3c53387c, ru.mirea.coursework.model.entity.Game@73b0a321, ru.mirea.coursework.model.entity.Game@52a2542d, ru.mirea.coursework.model.entity.Game@31a9ba41, ru.mirea.coursework.model.entity.Game@141cf4d0, ru.mirea.coursework.model.entity.Game@6243f4d9]
+2021-06-07 03:18:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:19:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:19:00
+2021-06-07 03:19:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:19:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:19:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 2 milliseconds. Return: []
+2021-06-07 03:19:00.019  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@49117901, ru.mirea.coursework.model.entity.Game@293ff5e3, ru.mirea.coursework.model.entity.Game@2ee47ec0, ru.mirea.coursework.model.entity.Game@49be9eba, ru.mirea.coursework.model.entity.Game@b252ffd, ru.mirea.coursework.model.entity.Game@5de34397, ru.mirea.coursework.model.entity.Game@507c3495, ru.mirea.coursework.model.entity.Game@6d0a3b6e, ru.mirea.coursework.model.entity.Game@4ff2abf5, ru.mirea.coursework.model.entity.Game@8cab667, ru.mirea.coursework.model.entity.Game@39a3f377, ru.mirea.coursework.model.entity.Game@54e7e66, ru.mirea.coursework.model.entity.Game@5fb9c039, ru.mirea.coursework.model.entity.Game@29d2c27]
+2021-06-07 03:19:00.021  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:20:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:20:00
+2021-06-07 03:20:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:20:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:20:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 0 milliseconds. Return: []
+2021-06-07 03:20:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@4a97036f, ru.mirea.coursework.model.entity.Game@55e820b0, ru.mirea.coursework.model.entity.Game@4fcf76e2, ru.mirea.coursework.model.entity.Game@38ac2bf, ru.mirea.coursework.model.entity.Game@717425da, ru.mirea.coursework.model.entity.Game@650d76e4, ru.mirea.coursework.model.entity.Game@51c164c1, ru.mirea.coursework.model.entity.Game@48bdb7c, ru.mirea.coursework.model.entity.Game@548174c2, ru.mirea.coursework.model.entity.Game@5a3592e0, ru.mirea.coursework.model.entity.Game@8120b, ru.mirea.coursework.model.entity.Game@5a02694d, ru.mirea.coursework.model.entity.Game@57a31ab, ru.mirea.coursework.model.entity.Game@732e1176]
+2021-06-07 03:20:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:21:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:21:00
+2021-06-07 03:21:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:21:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:21:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 2 milliseconds. Return: []
+2021-06-07 03:21:00.020  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@5dd46313, ru.mirea.coursework.model.entity.Game@2f7fe7af, ru.mirea.coursework.model.entity.Game@838dfb2, ru.mirea.coursework.model.entity.Game@8b79904, ru.mirea.coursework.model.entity.Game@7605affa, ru.mirea.coursework.model.entity.Game@26177c0a, ru.mirea.coursework.model.entity.Game@681cf235, ru.mirea.coursework.model.entity.Game@5cd7298b, ru.mirea.coursework.model.entity.Game@7f62794, ru.mirea.coursework.model.entity.Game@1a9cfc4c, ru.mirea.coursework.model.entity.Game@151e3870, ru.mirea.coursework.model.entity.Game@7060c029, ru.mirea.coursework.model.entity.Game@461c8336, ru.mirea.coursework.model.entity.Game@3b1f7925]
+2021-06-07 03:21:00.022  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:22:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:22:00
+2021-06-07 03:22:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:22:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:22:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 2 milliseconds. Return: []
+2021-06-07 03:22:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 2 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@769e090c, ru.mirea.coursework.model.entity.Game@7ca2ada8, ru.mirea.coursework.model.entity.Game@1af808a9, ru.mirea.coursework.model.entity.Game@27dc075b, ru.mirea.coursework.model.entity.Game@210cacc5, ru.mirea.coursework.model.entity.Game@48aa9aa1, ru.mirea.coursework.model.entity.Game@12cd7e5d, ru.mirea.coursework.model.entity.Game@556c4580, ru.mirea.coursework.model.entity.Game@11c2a16c, ru.mirea.coursework.model.entity.Game@d215e67, ru.mirea.coursework.model.entity.Game@7467f608, ru.mirea.coursework.model.entity.Game@4310fd41, ru.mirea.coursework.model.entity.Game@475dfd8e, ru.mirea.coursework.model.entity.Game@40885164]
+2021-06-07 03:22:00.019  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:23:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:23:00
+2021-06-07 03:23:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:23:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:23:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:23:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2e9d7336, ru.mirea.coursework.model.entity.Game@58311140, ru.mirea.coursework.model.entity.Game@45fe2328, ru.mirea.coursework.model.entity.Game@646062de, ru.mirea.coursework.model.entity.Game@21a1a9a7, ru.mirea.coursework.model.entity.Game@71ca17c2, ru.mirea.coursework.model.entity.Game@45199db0, ru.mirea.coursework.model.entity.Game@2208715f, ru.mirea.coursework.model.entity.Game@e480828, ru.mirea.coursework.model.entity.Game@2f1d6a24, ru.mirea.coursework.model.entity.Game@2660966a, ru.mirea.coursework.model.entity.Game@47839970, ru.mirea.coursework.model.entity.Game@944d0e0, ru.mirea.coursework.model.entity.Game@4d4cc7a6]
+2021-06-07 03:23:00.017  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 11 milliseconds.
+2021-06-07 03:24:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:24:00
+2021-06-07 03:24:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:24:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:24:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:24:00.018  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@7e775640, ru.mirea.coursework.model.entity.Game@e22f3b0, ru.mirea.coursework.model.entity.Game@76b52f84, ru.mirea.coursework.model.entity.Game@71795e49, ru.mirea.coursework.model.entity.Game@3578c370, ru.mirea.coursework.model.entity.Game@2cde191c, ru.mirea.coursework.model.entity.Game@73c8ca0c, ru.mirea.coursework.model.entity.Game@48f8592a, ru.mirea.coursework.model.entity.Game@3be86006, ru.mirea.coursework.model.entity.Game@67a2989e, ru.mirea.coursework.model.entity.Game@520fb6cc, ru.mirea.coursework.model.entity.Game@583494ae, ru.mirea.coursework.model.entity.Game@202437fe, ru.mirea.coursework.model.entity.Game@53b13d0c]
+2021-06-07 03:24:00.021  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 10 milliseconds.
+2021-06-07 03:25:00.005  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:25:00
+2021-06-07 03:25:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:25:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:25:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 0 milliseconds. Return: []
+2021-06-07 03:25:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@4ed9606a, ru.mirea.coursework.model.entity.Game@e9dbf16, ru.mirea.coursework.model.entity.Game@1d12d707, ru.mirea.coursework.model.entity.Game@2fc45b3b, ru.mirea.coursework.model.entity.Game@2a1bb499, ru.mirea.coursework.model.entity.Game@499ddbc3, ru.mirea.coursework.model.entity.Game@423c8718, ru.mirea.coursework.model.entity.Game@4f2c01e7, ru.mirea.coursework.model.entity.Game@3864dbe7, ru.mirea.coursework.model.entity.Game@1f005ceb, ru.mirea.coursework.model.entity.Game@39221c54, ru.mirea.coursework.model.entity.Game@16ae01ae, ru.mirea.coursework.model.entity.Game@80b4b7f, ru.mirea.coursework.model.entity.Game@15f1b991]
+2021-06-07 03:25:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 8 milliseconds.
+2021-06-07 03:26:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:26:00
+2021-06-07 03:26:00.005  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:26:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:26:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:26:00.010  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@87ba68, ru.mirea.coursework.model.entity.Game@456f166d, ru.mirea.coursework.model.entity.Game@3037015e, ru.mirea.coursework.model.entity.Game@166f5e2b, ru.mirea.coursework.model.entity.Game@2b06f274, ru.mirea.coursework.model.entity.Game@16e75507, ru.mirea.coursework.model.entity.Game@1e529b74, ru.mirea.coursework.model.entity.Game@72a01093, ru.mirea.coursework.model.entity.Game@6e29c9e1, ru.mirea.coursework.model.entity.Game@424af64e, ru.mirea.coursework.model.entity.Game@48c95c48, ru.mirea.coursework.model.entity.Game@3a1fe94a, ru.mirea.coursework.model.entity.Game@1ad94929, ru.mirea.coursework.model.entity.Game@fb424ba]
+2021-06-07 03:26:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:27:00.012  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:27:00
+2021-06-07 03:27:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:27:00.014  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:27:00.016  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:27:00.019  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@7cf0da1, ru.mirea.coursework.model.entity.Game@211247cf, ru.mirea.coursework.model.entity.Game@2048c017, ru.mirea.coursework.model.entity.Game@4736192, ru.mirea.coursework.model.entity.Game@7b2ec6b8, ru.mirea.coursework.model.entity.Game@4831ca2d, ru.mirea.coursework.model.entity.Game@2e9fe344, ru.mirea.coursework.model.entity.Game@317f68f4, ru.mirea.coursework.model.entity.Game@3ce96365, ru.mirea.coursework.model.entity.Game@7acfa677, ru.mirea.coursework.model.entity.Game@2b9befa9, ru.mirea.coursework.model.entity.Game@61e90ae6, ru.mirea.coursework.model.entity.Game@166caff5, ru.mirea.coursework.model.entity.Game@11975f51]
+2021-06-07 03:27:00.021  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:28:00.002  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:28:00
+2021-06-07 03:28:00.003  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:28:00.004  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:28:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 1 milliseconds. Return: []
+2021-06-07 03:28:00.009  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2ae7b966, ru.mirea.coursework.model.entity.Game@1f46d4cf, ru.mirea.coursework.model.entity.Game@3f5d78a5, ru.mirea.coursework.model.entity.Game@12885637, ru.mirea.coursework.model.entity.Game@533f189, ru.mirea.coursework.model.entity.Game@2c7aad4c, ru.mirea.coursework.model.entity.Game@78366036, ru.mirea.coursework.model.entity.Game@285fa8e9, ru.mirea.coursework.model.entity.Game@32fabbd2, ru.mirea.coursework.model.entity.Game@4b13700c, ru.mirea.coursework.model.entity.Game@6f9e88, ru.mirea.coursework.model.entity.Game@5522668c, ru.mirea.coursework.model.entity.Game@326163d1, ru.mirea.coursework.model.entity.Game@6222e681]
+2021-06-07 03:28:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
+Method: schedule. Time: 9 milliseconds.
+2021-06-07 03:29:00.006  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task started at 07-06-2021 03:29:00
+2021-06-07 03:29:00.007  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File games.txt was deleted: true
+2021-06-07 03:29:00.008  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : File levels.txt was deleted: true
+2021-06-07 03:29:00.011  INFO 25284 --- [   scheduling-1] r.m.c.model.service.LevelServiceImpl     : Found all levels
+Method: readAll. Time: 0 milliseconds. Return: []
+2021-06-07 03:29:00.013  INFO 25284 --- [   scheduling-1] r.m.c.model.service.GameServiceImpl      : Found all games
+Method: readAll. Time: 1 milliseconds. Return: [ru.mirea.coursework.model.entity.Game@2a8835c9, ru.mirea.coursework.model.entity.Game@38979a13, ru.mirea.coursework.model.entity.Game@4900c034, ru.mirea.coursework.model.entity.Game@7b4ecd60, ru.mirea.coursework.model.entity.Game@108399bd, ru.mirea.coursework.model.entity.Game@1440cebc, ru.mirea.coursework.model.entity.Game@5b0ead60, ru.mirea.coursework.model.entity.Game@56264eac, ru.mirea.coursework.model.entity.Game@5ae47ba4, ru.mirea.coursework.model.entity.Game@48c37b6a, ru.mirea.coursework.model.entity.Game@6688aabf, ru.mirea.coursework.model.entity.Game@2bfcbec, ru.mirea.coursework.model.entity.Game@7b7fb944, ru.mirea.coursework.model.entity.Game@28b4856a]
+2021-06-07 03:29:00.015  INFO 25284 --- [   scheduling-1] r.m.c.model.service.SchedulerService     : SCHEDULED task finished.
 Method: schedule. Time: 9 milliseconds.

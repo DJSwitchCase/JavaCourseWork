@@ -9,12 +9,12 @@
             Редактирование имени
     <input type="text" name="username" value="{{username}}">
         </div>
-<!--    {{#roles}}-->
-        Редактирование роли
-    <div>
-        <label><input type="checkbox" name="{{roles}}">{{roles}}</label>
-    </div>
-<!--    {{/roles}}-->
+<!--&lt;!&ndash;    {{#roles}}&ndash;&gt;-->
+<!--        Редактирование роли-->
+<!--    <div>-->
+<!--        <label><input type="checkbox" name="{{roles}}">{{roles}}</label>-->
+<!--    </div>-->
+<!--&lt;!&ndash;    {{/roles}}&ndash;&gt;-->
     <input type="hidden" value="{{id}}" name="userId">
     {{/user}}
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" />

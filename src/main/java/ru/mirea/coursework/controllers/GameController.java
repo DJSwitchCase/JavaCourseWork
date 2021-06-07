@@ -20,12 +20,12 @@ public class GameController {
     //List<Level> levels;
     //внедряем зависимость от LevelService
     public final GameService gameService;
-    @Autowired
-    private GameRepository gameRepository;
+    private final GameRepository gameRepository;
 
     @Autowired
-    public GameController(GameService gameService) {
+    public GameController(GameService gameService, GameRepository gameRepository) {
         this.gameService = gameService;
+        this.gameRepository = gameRepository;
     }
 
 //    @GetMapping("/user")

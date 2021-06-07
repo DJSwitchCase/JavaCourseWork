@@ -1,8 +1,13 @@
 package ru.mirea.coursework.controllers;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -12,19 +17,23 @@ import ru.mirea.coursework.model.entity.User;
 import ru.mirea.coursework.model.repository.GameRepository;
 import ru.mirea.coursework.model.repository.UserRepository;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/admin")
-public class AdminController {
-    @Autowired
-    private GameRepository gameRepository;
-    @Autowired
-    private UserRepository userRepository;
+public class AdminController implements AuthenticationSuccessHandler {
+
+    private final GameRepository gameRepository;
+    private final UserRepository userRepository;
+
+    public AdminController(GameRepository gameRepository, UserRepository userRepository) {
+        this.gameRepository = gameRepository;
+        this.userRepository = userRepository;
+    }
 
 //    @GetMapping
 //    public String userList(Model model){
@@ -32,19 +41,37 @@ public class AdminController {
 //        return "userList";
 //    }
 
-    @GetMapping
-    public String Lists(Map<String, Object> model, Model model2){
+
+
+    @GetMapping()
+    public String Main(Map<String, Object> model, Model model2, HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
+        Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
+        if (roles.contains("USER"))
+            response.sendRedirect("/user");
         Iterable<Game> games = gameRepository.findAll();
         model.put("messages", games);
         model2.addAttribute("users", userRepository.findAll());
         return "admin";
     }
+    @DeleteMapping()
+    public String delete(){
+
+        return "admin";
+    }
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
     @GetMapping("{user}")
     public String userEditForm(@PathVariable User user, Model model){
-    model.addAttribute("user", user);
+        model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
         return "userEdit";
     }
+
+    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
+        Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
+        if (roles.contains("ROLE_USER"))
+            response.sendRedirect("/userpage");
+    }
+
     @GetMapping("games/{game}")
     public String userEditForm(@PathVariable Game game, Model model){
         model.addAttribute("game", game);
@@ -52,15 +79,16 @@ public class AdminController {
     }
 
 
-
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
     @PostMapping
     public String create(@RequestParam String name, @RequestParam String creationDate, Map<String, Object> model){
         Game game = new Game(name, creationDate);
         gameRepository.save(game);
         Iterable<Game> games = gameRepository.findAll();
         model.put("messages", games);
-        return "admin";
+        return "redirect:/admin";
     }
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
     @PostMapping("/games/{game}")
     public String gameSave(
             @RequestParam String name,
@@ -82,7 +110,11 @@ public class AdminController {
         gameRepository.save(game);
         return "redirect:/admin";
         }
-
+//    @DeleteMapping
+//    public String deleteGame(){
+//
+//    }
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
     @PostMapping("{user}")
     public String userSave(
             @RequestParam String username,
@@ -104,7 +136,7 @@ public class AdminController {
         userRepository.save(user);
         return "redirect:/admin";
     }
-
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
     @PostMapping("/filter")
     public String filter(@RequestParam String filter, Map<String, Object> model){
         Iterable<Game> messages; //Потому что findAll() возвращает Iterable

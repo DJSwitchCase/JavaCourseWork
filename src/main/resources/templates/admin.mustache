@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<htmL>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Страница администратора</title>
+        <meta charset="UTF-8">
+        <title>Страница администратора</title>
+        <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
 <div>
 <form method="post">
     <input type="text" name="name" placeholder="Введите название игры" />
     <input type="number" name="creationDate" placeholder="Введите дату создания игры">
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
-    <button type="submit">Добавить в БД</button>
+
+    <button type="submit" class="pushable">
+  <span class="front">
+      Добавить в БД
+  </span>
+    </button>
 </form>
 </div>
 <div>
@@ -20,12 +27,13 @@
 <!--   <input type="text" name="filter">-->
 <!--    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />-->
 <!--</form>-->
-    Список игр:
+<p4>Список игр:</p4>
     <table>
         <thead>
         <th>ID</th>
-        <th>Имя</th>
-        <th>Дата</th>
+        <th>Название товара</th>
+        <th>Цена</th>
+        <th>Редактирование</th>
         </thead>
         <tbody>
     {{#messages}}
@@ -38,12 +46,13 @@
     {{/messages}}
     </tbody>
     </table>
-Список пользователей:
+<p3>Список пользователей:</p3>
 <table>
     <thead>
     <th>Имя</th>
     <th>Роль</th>
     <th>Статус</th>
+    <th>Редактирование</th>
     </thead>
     <tbody>
     {{#users}}
@@ -52,20 +61,25 @@
             <td>{{roles}}</td>
             <td>{{active}}</td>
             <td><a href="/admin/{{id}}">Редактировать</a></td>
-            <td>
-                <form>
-                    <button type="submit">Удалить</button>
-                <input name="_method" type="hidden" value="DELETE" />
-                    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
-                </form>
-            </td>
+<!--            <td>-->
+<!--                <form>-->
+<!--                    <button type="submit">Удалить</button>-->
+<!--                    <input name="_method" type="hidden" value="DELETE" />-->
+<!--                    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />-->
+<!--                </form>-->
+<!--            </td>-->
         </tr>
     {{/users}}
     </tbody>
 </table>
-<form action="/logout" method="post">
-    <input type="submit" value="Выйти"/>
-    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
-</form>
+<!--<form action="/logout" method="post">-->
+<!--    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />-->
+<!--    <button type="submit" class="pushable">-->
+<!--  <span class="front">-->
+<!--Выйти-->
+<!--  </span>-->
+<!--    </button>-->
+<!--</form>-->
+
 </body>
 </html>

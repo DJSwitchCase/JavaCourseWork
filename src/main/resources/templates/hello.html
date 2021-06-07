@@ -2,13 +2,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
       xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <title>Hello World!</title>
+    <title>Ломбард города N</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<h1>Добро пожаловать на сайт!</h1>
-<p><a href="/registration">Зарегистрироваться</a></p>
-<p><a href="/login">Авторизироваться</a></p>
+<div class="container">
+    <header class="text-center mb-4" style="width:80%"></header>
+    <h1>Ломбард города N</h1>
+</div>
+<div class="text-center mb-4" style="display:flex; flex-direction: row; align-items: center; justify-content: center">
+<button class="pushable">
 
-<div>Список игр</div>
+    <a href="/registration"></a>
+
+</button>
+<button class="pushable">
+  <span class="front">
+      <a href="/registration">Зарегистрироваться</a>
+  </span>
+</button>
+<button class="pushable">
+  <span class="front">
+     <a href="/login">Авторизироваться</a>
+  </span>
+</button>
+</div>
+
 </body>
 </html>

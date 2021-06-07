@@ -15,8 +15,12 @@ import java.util.Map;
 
 @Controller
 public class HomeController {
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    public HomeController(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
     @GetMapping("/")
     public String greeting(@RequestParam(name = "name", required = false, defaultValue = "World") String name, Model model) {
         model.addAttribute("name", name);
@@ -42,7 +46,6 @@ public class HomeController {
             model.put("message", "Пользователь с такими данными уже существует!");
             return "registration";
         }
-        System.out.println("Privet3");
         user.setActive(true);
         user.setRoles(Collections.singleton(Role.USER));
         userRepository.save(user);
