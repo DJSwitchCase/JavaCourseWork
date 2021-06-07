@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS levels
     game_id bigint,
     constraint fk_game_id
         foreign key (game_id)
-            references games(id)
+            references items(id)
 );
 
 CREATE TABLE IF NOT EXISTS games(

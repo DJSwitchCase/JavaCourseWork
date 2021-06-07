@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="static/styles/style.css">
 </head>
 <body>
-{{#game}}
-    <form action="/admin/games/{{id}}" method="post">
+{{#item}}
+    <form action="/admin/items/{{id}}" method="post">
 
         <div>
             <h1 id="style_h1">Редактирование имени</h1>
             <input type="text" name ="name" value="{{name}}">
-            <input type="text" name="creationDate" value="{{creationDate}}">
+            <input type="text" name="price" value="{{price}}">
         </div>
-        <input type="hidden" value="{{id}}" name="gameId">
-{{/game}}
+        <input type="hidden" value="{{id}}" name="itemId">
+{{/item}}
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
     <button type="submit">Сохранить изменения</button>
 </form>

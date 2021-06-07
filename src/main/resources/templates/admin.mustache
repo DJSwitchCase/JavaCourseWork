@@ -9,8 +9,8 @@
 
 <div>
 <form method="post">
-    <input type="text" name="name" placeholder="Введите название игры" />
-    <input type="number" name="creationDate" placeholder="Введите дату создания игры">
+    <input type="text" name="name" placeholder="Введите название товара" />
+    <input type="number" name="price" placeholder="Введите цену товара">
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
 
     <button type="submit" class="pushable">
@@ -27,7 +27,7 @@
 <!--   <input type="text" name="filter">-->
 <!--    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />-->
 <!--</form>-->
-<p4>Список игр:</p4>
+<p4>Список товаров:</p4>
     <table>
         <thead>
         <th>ID</th>
@@ -40,8 +40,8 @@
         <tr>
         <td>{{id}}</td>
         <td>{{name}}</td>
-        <td>{{creationDate}}</td>
-        <td><a href ="/admin/games/{{id}}">Редактировать</a></td>
+        <td>{{price}}</td>
+        <td><a href ="/admin/items/{{id}}">Редактировать</a></td>
         </tr>
     {{/messages}}
     </tbody>

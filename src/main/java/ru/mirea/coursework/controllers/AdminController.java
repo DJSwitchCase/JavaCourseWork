@@ -1,9 +1,6 @@
 package ru.mirea.coursework.controllers;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -11,10 +8,10 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ru.mirea.coursework.model.entity.Game;
+import ru.mirea.coursework.model.entity.Item;
 import ru.mirea.coursework.model.entity.Role;
 import ru.mirea.coursework.model.entity.User;
-import ru.mirea.coursework.model.repository.GameRepository;
+import ru.mirea.coursework.model.repository.ItemRepository;
 import ru.mirea.coursework.model.repository.UserRepository;
 
 import javax.servlet.http.HttpServletRequest;
@@ -27,11 +24,11 @@ import java.util.stream.Collectors;
 @RequestMapping("/admin")
 public class AdminController implements AuthenticationSuccessHandler {
 
-    private final GameRepository gameRepository;
+    private final ItemRepository itemsRepository;
     private final UserRepository userRepository;
 
-    public AdminController(GameRepository gameRepository, UserRepository userRepository) {
-        this.gameRepository = gameRepository;
+    public AdminController(ItemRepository itemsRepository, UserRepository userRepository) {
+        this.itemsRepository = itemsRepository;
         this.userRepository = userRepository;
     }
 
@@ -48,8 +45,8 @@ public class AdminController implements AuthenticationSuccessHandler {
         Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
         if (roles.contains("USER"))
             response.sendRedirect("/user");
-        Iterable<Game> games = gameRepository.findAll();
-        model.put("messages", games);
+        Iterable<Item> items = itemsRepository.findAll();
+        model.put("messages", items);
         model2.addAttribute("users", userRepository.findAll());
         return "admin";
     }
@@ -72,31 +69,31 @@ public class AdminController implements AuthenticationSuccessHandler {
             response.sendRedirect("/userpage");
     }
 
-    @GetMapping("games/{game}")
-    public String userEditForm(@PathVariable Game game, Model model){
-        model.addAttribute("game", game);
-        return "gameEdit";
+    @GetMapping("items/{item}")
+    public String userEditForm(@PathVariable Item item, Model model){
+        model.addAttribute("item", item);
+        return "itemEdit";
     }
 
 
     @PreAuthorize("hasAnyAuthority('ADMIN')")
     @PostMapping
-    public String create(@RequestParam String name, @RequestParam String creationDate, Map<String, Object> model){
-        Game game = new Game(name, creationDate);
-        gameRepository.save(game);
-        Iterable<Game> games = gameRepository.findAll();
-        model.put("messages", games);
+    public String create(@RequestParam String name, @RequestParam String price, Map<String, Object> model){
+        Item item = new Item(name, price);
+        itemsRepository.save(item);
+        Iterable<Item> items = itemsRepository.findAll();
+        model.put("messages", items);
         return "redirect:/admin";
     }
     @PreAuthorize("hasAnyAuthority('ADMIN')")
-    @PostMapping("/games/{game}")
-    public String gameSave(
+    @PostMapping("/items/{item}")
+    public String itemSave(
             @RequestParam String name,
             @RequestParam Map<String, String> form,
-            @RequestParam String creationDate,
-            @RequestParam ("gameId") Game game){
-        game.setName(name);
-        game.setCreationDate(creationDate);
+            @RequestParam String price,
+            @RequestParam ("item") Item item){
+        item.setName(name);
+        item.setPrice(price);
 //        //из enum в строку
 //        Set<String> roles = Arrays.stream(Role.values())
 //                .map(Role::name).collect(Collectors.toSet());
@@ -107,13 +104,10 @@ public class AdminController implements AuthenticationSuccessHandler {
 //            if (roles.contains(key)){
 //                user.getRoles().add(Role.valueOf(key));
 //            }
-        gameRepository.save(game);
+        itemsRepository.save(item);
         return "redirect:/admin";
         }
-//    @DeleteMapping
-//    public String deleteGame(){
-//
-//    }
+
     @PreAuthorize("hasAnyAuthority('ADMIN')")
     @PostMapping("{user}")
     public String userSave(
@@ -139,12 +133,12 @@ public class AdminController implements AuthenticationSuccessHandler {
     @PreAuthorize("hasAnyAuthority('ADMIN')")
     @PostMapping("/filter")
     public String filter(@RequestParam String filter, Map<String, Object> model){
-        Iterable<Game> messages; //Потому что findAll() возвращает Iterable
+        Iterable<Item> messages; //Потому что findAll() возвращает Iterable
                                 //FindByCD возвращает List, а List имплементирует Iterable
         if (filter != null && !filter.isEmpty())
-            messages = gameRepository.findByCreationDate(filter);
+            messages = itemsRepository.findByPrice(filter);
         else
-            messages = gameRepository.findAll();
+            messages = itemsRepository.findAll();
         model.put("messages", messages);
         return "admin";
     }

@@ -29,8 +29,7 @@ public class SchedulerService {
 //    public void reportCurrentTime() {
 //        System.out.println("The time is now " + dateFormat.format(new Date()));
 //    }
-    private final LevelService levelService;
-    private final GameService gameService;
+    private final ItemService gameService;
     private final String path = "scheduler";
 
     //every minute
@@ -54,21 +53,47 @@ public class SchedulerService {
 
         BufferedWriter iBufWriter = createWriter(path, "levels.txt");;
         iBufWriter.write("id|name|complexity\n");
-        levelService.readAll().forEach(level ->
-        {
-            try{
-                iBufWriter.write(
-                        String.format(
-                                "%d|%s|%s\n",
-                                level.getId(),
-                                level.getName(),
-                                level.getComplexity()
-                        )
-                );
-            }catch (IOException e){
-                e.printStackTrace();
-            }
-        });
+//        levelService.readAll().forEach(level ->
+//        {
+//            try{
+//                iBufWriter.write(
+//                        String.format(
+//                                "%d|%s|%s\n",
+//                                level.getId(),
+//                                level.getName(),
+//                                level.getComplexity()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//                        )
+//                );
+//            }catch (IOException e){
+//                e.printStackTrace();
+//            }
+//        });
         iBufWriter.close();
 
         BufferedWriter oBufWriter = createWriter(path, "games.txt");
@@ -81,7 +106,7 @@ public class SchedulerService {
                                         "%d|%s|%s\n",
                                         game.getId(),
                                         game.getName(),
-                                        game.getCreationDate())
+                                        game.getPrice())
                         );
                     }catch (IOException e) {
                         e.printStackTrace();

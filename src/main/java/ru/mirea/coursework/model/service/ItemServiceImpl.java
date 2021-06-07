@@ -2,8 +2,8 @@ package ru.mirea.coursework.model.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.mirea.coursework.model.entity.Game;
-import ru.mirea.coursework.model.repository.GameRepository;
+import ru.mirea.coursework.model.entity.Item;
+import ru.mirea.coursework.model.repository.ItemRepository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -16,8 +16,8 @@ import java.util.List;
 @Service
 @Slf4j
 @Transactional
-public class GameServiceImpl implements GameService {
-    public final GameRepository gameRepository;
+public class ItemServiceImpl implements ItemService {
+    public final ItemRepository itemsRepository;
     private final EmailService emailService;
 //    private SessionFactory sessionFactory;
 //    private Session session;
@@ -38,61 +38,57 @@ public class GameServiceImpl implements GameService {
 //    CriteriaQuery<Game> gameCriteriaQuery = cb.createQuery(Game.class);
 //    Root<Game> root = gameCriteriaQuery.from(Game.class);
 
-    public ArrayList<Game> sort() {
+    public ArrayList<Item> sort() {
         CriteriaBuilder cb = em.getCriteriaBuilder();
-        CriteriaQuery<Game> gameCriteriaQuery = cb.createQuery(Game.class);
-        Root<Game> root = gameCriteriaQuery.from(Game.class);
+        CriteriaQuery<Item> itemsCriteriaQuery = cb.createQuery(Item.class);
+        Root<Item> root = itemsCriteriaQuery.from(Item.class);
         String SortParam = "name";
-        gameCriteriaQuery.select(root).orderBy(cb.asc(root.get(SortParam)));
+        itemsCriteriaQuery.select(root).orderBy(cb.asc(root.get(SortParam)));
         //Query<Game> query = (Query<Game>) em.createQuery(gameCriteriaQuery);
         log.info("Sorted games by " + SortParam);
-        return (ArrayList<Game>) em.createQuery(gameCriteriaQuery).getResultList();
+        return (ArrayList<Item>) em.createQuery(itemsCriteriaQuery).getResultList();
 
     }
 
     //CriteriaBuilder builder;
 
-    public GameServiceImpl(GameRepository gameRepository, EmailService emailService) {
-        this.gameRepository = gameRepository;
+    public ItemServiceImpl(ItemRepository itemsRepository, EmailService emailService) {
+        this.itemsRepository = itemsRepository;
         this.emailService = emailService;
     }
-    // Хранилище клиентов
-    ///private static final Map<Integer, Level> LEVEL_REPOSITORY_MAP = new HashMap<>();
-    // Переменная для генерации ID клиента
-    ///private static final AtomicInteger LEVEL_ID_HOLDER = new AtomicInteger();
 
     @Override
-    public void create(Game game) {
-        log.info("Saved a new game " + game.name);
+    public void create(Item item) {
+        log.info("Saved a new item " + item.name);
         ///    final int levelId = LEVEL_ID_HOLDER.incrementAndGet();
         ///    level.setId(levelId);
         ///    LEVEL_REPOSITORY_MAP.put(levelId, level);
-        gameRepository.save(game);
-        emailService.sendSimpleMessage("Saved a new game "+ game.name);
+        itemsRepository.save(item);
+        emailService.sendSimpleMessage("Saved a new item "+ item.name);
     }
 
     @Override
-    public List<Game> readAll() {
+    public List<Item> readAll() {
         ///return new ArrayList<>(LEVEL_REPOSITORY_MAP.values());
-        log.info("Found all games");
-        return gameRepository.findAll();
+        log.info("Found all items");
+        return itemsRepository.findAll();
     }
 
     @Override
-    public Game read(int id) {
+    public Item read(int id) {
         ///return LEVEL_REPOSITORY_MAP.get(id);
-        log.info("Got the game by id " + id);
-        return gameRepository.getById(id);
+        log.info("Got the item by id " + id);
+        return itemsRepository.getById(id);
     }
 
     @Override
-    public boolean update(Game game, int id) {
+    public boolean update(Item item, int id) {
         ///if (LEVEL_REPOSITORY_MAP.containsKey(id)){
-        log.info("Updated the game " + game + " by id " + id);
-        if (gameRepository.existsById(id)) {
-            game.setId(id);
+        log.info("Updated the item " + item + " by id " + id);
+        if (itemsRepository.existsById(id)) {
+            item.setId(id);
             ///LEVEL_REPOSITORY_MAP.put(id, level);
-            gameRepository.save(game);
+            itemsRepository.save(item);
             return true;
         }
         return false;
@@ -101,9 +97,9 @@ public class GameServiceImpl implements GameService {
     @Override
     public boolean delete(int id) {
         ///return LEVEL_REPOSITORY_MAP.remove(id) != null;
-        log.info("Deleted the game by id " + id);
-        if (gameRepository.existsById(id)) {
-            gameRepository.deleteById(id);
+        log.info("Deleted the item by id " + id);
+        if (itemsRepository.existsById(id)) {
+            itemsRepository.deleteById(id);
             return true;
         }
         return false;

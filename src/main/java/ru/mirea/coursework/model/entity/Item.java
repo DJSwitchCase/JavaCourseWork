@@ -5,9 +5,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "games")
+@Table(name = "items")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public class Game {
+public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer id;
@@ -22,12 +22,12 @@ public class Game {
 
     @Column(name = "name")
     public String name;
-    @Column(name = "date")
-    public String creationDate;
+    @Column(name = "price")
+    public String price;
 
-    public Game(String name, String creationDate) {
+    public Item(String name, String price) {
         this.name = name;
-        this.creationDate = creationDate;
+        this.price = price;
     }
 
 //    public Game(Integer id, String name, String creationDate) {
@@ -36,7 +36,7 @@ public class Game {
 //        this.creationDate = creationDate;
 //    }
 
-    public Game() {
+    public Item() {
 
     }
 
@@ -48,11 +48,11 @@ public class Game {
         this.name = name;
     }
 
-    public String getCreationDate() {
-        return creationDate;
+    public String getPrice() {
+        return price;
     }
 
-    public void setCreationDate(String creationDate) {
-        this.creationDate = creationDate;
+    public void setPrice(String price) {
+        this.price = price;
     }
 }
