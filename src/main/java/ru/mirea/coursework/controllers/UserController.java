@@ -25,4 +25,9 @@ public class UserController {
         model.put("messages", games);
         return "user";
     }
+    @GetMapping("/purchase")
+        public String purchase(){
+        return "purchase";
+    }
 }
+
