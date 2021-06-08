@@ -12,13 +12,6 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer id;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     @Column(name = "name")
     public String name;
@@ -30,14 +23,16 @@ public class Item {
         this.price = price;
     }
 
-//    public Game(Integer id, String name, String creationDate) {
-//        this.id = id;
-//        this.name = name;
-//        this.creationDate = creationDate;
-//    }
-
     public Item() {
 
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {

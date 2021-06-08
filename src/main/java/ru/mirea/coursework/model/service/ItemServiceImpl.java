@@ -74,6 +74,14 @@ public class ItemServiceImpl implements ItemService {
         return itemsRepository.findAll();
     }
 
+    public Item findById(int id) {
+        return itemsRepository.findById(id);
+    }
+
+    public Item findByName(String name) {
+        return itemsRepository.findByName(name);
+    }
+
     @Override
     public Item read(int id) {
         ///return LEVEL_REPOSITORY_MAP.get(id);
