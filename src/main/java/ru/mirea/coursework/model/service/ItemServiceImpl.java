@@ -93,7 +93,7 @@ public class ItemServiceImpl implements ItemService {
     public boolean update(Item item, int id) {
         ///if (LEVEL_REPOSITORY_MAP.containsKey(id)){
         log.info("Updated the item " + item + " by id " + id);
-        if (itemsRepository.existsById(id)) {
+        if (!itemsRepository.existsById(id)) {
             item.setId(id);
             ///LEVEL_REPOSITORY_MAP.put(id, level);
             itemsRepository.save(item);

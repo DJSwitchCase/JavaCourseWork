@@ -1,0 +1,6 @@
+ru.mirea.coursework
+ru.mirea.coursework.config
+ru.mirea.coursework.controllers
+ru.mirea.coursework.model.entity
+ru.mirea.coursework.model.repository
+ru.mirea.coursework.model.service
