@@ -25,7 +25,6 @@ class ItemServiceImplTest {
     @Captor
     private ArgumentCaptor<Integer> captorInteger;
     @Test
-    //проверяем правильность поиска по id.
     public void shouldRead() {
         Item item1 = new Item();
         item1.setId(145);
@@ -42,7 +41,6 @@ class ItemServiceImplTest {
         Assertions.assertEquals(item2.getId(), item2orNot.getId());
     }
     @Test
-    //проверяем правильность сохранения объекта.
     public void shouldCreate(){
         Item item1 = new Item();
         item1.setId(1);
@@ -56,13 +54,6 @@ class ItemServiceImplTest {
     public void shouldReadAll(){
         Item item1 = new Item();
         Item item2 = new Item();
-
-//        Mockito.when(itemsRepository.save(item1)).thenAnswer(i -> i.getArguments()[0]);
-//        Mockito.when(itemsRepository.save(item2)).thenAnswer(i -> i.getArguments()[0]);
-//
-//        itemsRepository.save(item1);
-//        itemsRepository.save(item2);
-
         Mockito.when(itemsRepository.findAll()).thenReturn(List.of(item1, item2));
         Assertions.assertEquals(itemService.readAll(), List.of(item1, item2));
     }
