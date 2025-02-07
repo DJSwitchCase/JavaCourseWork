@@ -57,7 +57,6 @@ class ItemServiceImplTest {
         Mockito.when(itemsRepository.findAll()).thenReturn(List.of(item1, item2));
         Assertions.assertEquals(itemService.readAll(), List.of(item1, item2));
     }
-
     @Test
     public void shouldFindByName(){
         Item item1 = new Item();
